@@ -1,0 +1,64 @@
+.header {
+  background-color: #d50032; /* Set the redish background color */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+
+  }
+  
+  .logo img {
+    height: 6rem;
+    margin-right: 0.5rem;
+    filter: brightness(0) invert(1); /* Apply white color to the logo */
+    cursor: pointer;
+
+  }
+    
+  .nft-image {
+    display: none; /* Hide the NFT image by default */
+  }
+  
+  .social-icons {
+    display: none; /* Hide the social icons by default */
+  }
+  
+  @media (min-width: 768px) {
+    .logo {
+        justify-content: center; /* Align the logo in the center */
+      }  
+      .nft-image {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Position the element to the right */
+        flex-grow: 1;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%, -50%);
+      }
+        
+    .social-icons {
+      display: flex; /* Show the social icons on screens larger than 767px */
+      align-items: center;
+      justify-content: flex-end; /* Align icons to the right side */
+    }
+  
+    .social-icons .icon {
+      font-size: 1.5rem; /* Adjust the icon size as needed */
+      transition: color 0.3s;
+    }
+  
+    .social-icons .icon:hover {
+      color: #000; /* Change the color on hover if desired */
+    }
+  }
+  

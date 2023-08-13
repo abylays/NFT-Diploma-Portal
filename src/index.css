@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+@layer base {
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+.alchemy {
+  background: linear-gradient(267.45deg, #05d5ff -34.23%, #53f 99.39%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: screen;
+}
+
+.card {
+  max-width: 1100px;
+  padding: 40px;
+  border-radius: 50px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.card-title {
+  @apply text-2xl font-semibold mb-2 font-montserrat;
+}
+
+.card-image {
+  @apply w-full max-w-xs mx-auto mb-4;
+}
+
+.card-description {
+  @apply mb-2 text-base font-montserrat;
+}
+
+.card-info {
+  @apply mb-2 text-base font-montserrat;
+}
+
+.social-icons {
+  @apply flex justify-between mt-4;
+}
+
+.blue-button {
+  @apply bg-blue-500 text-white px-4 py-2 mr-2 rounded-lg font-montserrat;
+}
+
+.green-button {
+  @apply bg-green-500 text-white px-4 py-2 rounded-lg font-montserrat;
+}
+
+.buttons {
+  @apply flex justify-center mt-4;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .card-title {
+    font-size: 1.5rem; /* Adjust the font size for mobile */
+  }
+  .card-mobile{
+    display: inline;
+   
+  }
+  .card-description-left {
+    font-size: 0.875rem;
+    text-align: left; /* Adjust the font size for mobile */
+  }
+  .card-description-right {
+    font-size: 0.875rem;
+    text-align: right; /* Adjust the font size for mobile */
+  }
+
+
+  .card-details {
+    font-size: 0.875rem; /* Adjust the font size for mobile */
+  }
+
+  .card-info {
+    font-size: 0.875rem; /* Adjust the font size for mobile */
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5rem; /* Adjust the spacing for mobile */
+  }
+
+  .blue-button,
+  .green-button {
+    font-size: 0.875rem; /* Adjust the font size for mobile */
+  }
+
+  .buttons {
+    margin-top: 0.5rem; /* Adjust the spacing for mobile */
+  }
+
+  .mobile-filters-button {
+    display: none;
+  }
+}

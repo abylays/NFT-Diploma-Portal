@@ -1,0 +1,61 @@
+{
+  "name": "nft-api-test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "alchemy-sdk": "^2.8.3",
+    "antd": "^5.5.1",
+    "api": "^5.0.8",
+    "framer-motion": "^10.12.16",
+    "node-fetch": "^3.3.1",
+    "qrcode.react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
+    "react-router": "^6.11.2",
+    "react-router-dom": "^6.11.1",
+    "react-scripts": "^5.0.1",
+    "react-select": "^5.7.3",
+    "web-vitals": "^2.1.4"
+  },
+  "homepage": "https://tangerine-macaron-993c65.netlify.app",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
+    "jest": "^27.5.1",
+    "tailwindcss": "^3.3.2"
+  }
+}
